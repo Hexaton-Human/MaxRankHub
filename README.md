@@ -1,0 +1,2 @@
+# MaxRankHub
+Roblox Script
