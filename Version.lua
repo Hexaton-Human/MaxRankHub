@@ -1,6 +1,4 @@
-VERSION = "0.01b"
+VERSION = "0.01c"
 
--- Korean Murderer: Added Get All Toys
--- Korean Murderer: Added Get All Emotes
--- Korean Murderer: Added Key System
--- Korean Murderer: Added Secure Mode
+-- Korean Murderer: Added Configuration Saving
+-- Korean Murderer: Added Local Tab
