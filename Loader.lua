@@ -5,3 +5,6 @@ function checkgameid(id, link)
 end
 
 checkgameid(5720801512, nil)
+if game.PlaceId ~= 5720801512 then
+    print("Universal")
+end
