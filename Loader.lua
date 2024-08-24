@@ -1,11 +1,14 @@
 function checkgameid(id, link)
     if game.PlaceId == id then
         loadstring(game.HttpGet(link))()
-  end
+    end
 end
 
-if game.PlaceId ~= 5720801512 then
-    print("Universal")
+function executeuniversal(id)
+    if game.PlaceId ~= id then
+        print("Universal")
+    end
 end
 
 checkgameid(5720801512, nil)
+executeuniversal(5720801512)
