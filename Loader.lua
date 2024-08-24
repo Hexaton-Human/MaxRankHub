@@ -10,5 +10,11 @@ function executeuniversal(id)
     end
 end
 
+if not game:IsLoaded() then 
+  print("Waiting on game load...")
+  game.Loaded:Wait() 
+  print("Game loaded...")
+end
+
 checkgameid(5720801512, nil)
 executeuniversal(5720801512)
