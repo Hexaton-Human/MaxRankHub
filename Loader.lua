@@ -1,6 +1,5 @@
 local localPlayer = game.Players.LocalPlayer
 local starterGui = game:GetService("StarterGui")
-local identifyexecutor = indentifyexecutor()
 
 if identifyexecutor() == 'Solara' then
     CoreGui:SetCore("SendNotification", {
