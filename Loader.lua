@@ -1,20 +1,13 @@
-function checkgameid(id, link)
-    if game.PlaceId == id then
-        loadstring(game.HttpGet(link))()
-    end
-end
+local localPlayer = game.Players.LocalPlayer
+local starterGui = game:GetService("StarterGui")
+local identifyexecutor = indentifyexecutor()
 
-function executeuniversal(id)
-    if game.PlaceId ~= id then
-        print("Universal")
-    end
+if identifyexecutor() == 'Solara' then
+    CoreGui:SetCore("SendNotification", {
+	Title = "MaxRank Hub Notification"
+	Text = "Solara is not offically support in MaxRank Hub. This may cause some error."
+	Duration = 5
+	--Callback here
+	Button1 = "Ok"
+}
 end
-
-if not game:IsLoaded() then 
-  print("Waiting on game load...")
-  game.Loaded:Wait() 
-  print("Game loaded...")
-end
-
-checkgameid(5720801512, nil)
-executeuniversal(5720801512)
